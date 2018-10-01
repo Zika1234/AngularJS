@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import {Router} from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Atlas Insurance Corporation';
+
+  constructor(private router:Router){
+
+  }
+  title = 'Atlas insurance Group';
+  ngOnInit():void{
+    this.router.navigateByUrl('login');
+  }
 }

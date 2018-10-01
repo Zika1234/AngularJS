@@ -1,0 +1,12 @@
+<div>
+  <ul>
+    <li *ngFor="let item of typeArray">
+      <span><input type="radio" name="insurance-type" value={{item.value}} [(ngModel)]="selectedOption" ></span> {{item.name}}
+    </li>
+  </ul>
+</div>
+
+<div>
+  <span><input type="button" value="next" (click)="onClick()"></span>
+</div>
+<p id="demo"></p>

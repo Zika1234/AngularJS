@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {LoginService} from '../login.service'
+import {LoginService} from '../login.service';
+import { Router} from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -8,14 +10,16 @@ import {LoginService} from '../login.service'
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private loginService: LoginService) { }
+  constructor(private loginService : LoginService, private router:Router ) { }
 
   ngOnInit() {
   }
-  loginId : string  ;
-  password : string ;
+
+  loginId:string;
+  password:string;
   validate():void{
-      this.loginService.getPasswd(this.loginId)
-      .subscribe(data=>{if(data.credentials.passwd==this.password){alert('succ')}});
+    this.loginService.getPassword(this.loginId).subscribe(data=>{if(data.credentials.passwd==this.password){this.router.navigateByUrl('insurancetype')}});
+    
   }
+
 }

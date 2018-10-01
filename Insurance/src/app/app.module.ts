@@ -3,17 +3,24 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms'
 import { HttpClientModule }    from '@angular/common/http';
 
-
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+import { InsuranceTypeComponent } from './insurance-type/insurance-type.component';
+import { CarTypeComponent } from './car-type/car-type.component';
+import { PriceComponent } from './price/price.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    InsuranceTypeComponent,
+    CarTypeComponent,
+    PriceComponent
   ],
   imports: [
-    BrowserModule,FormsModule, HttpClientModule
+    BrowserModule,
+    FormsModule, HttpClientModule, AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

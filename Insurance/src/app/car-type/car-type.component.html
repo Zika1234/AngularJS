@@ -1,0 +1,11 @@
+<div>
+  <ul>
+    <li *ngFor="let item of cartypeArray">
+      <span><input type="radio" name="car-type" value=item.value></span> {{item.model}}
+    </li>
+  </ul>
+</div>
+
+<div>
+  <span><input type="button" value="next"></span>
+</div>

@@ -1,0 +1,6 @@
+{
+    "Type":[
+        {"name":"car","value":"car"},
+        {"name" : "Health", "value":"Health"}
+    ]
+}

@@ -5,16 +5,13 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class LoginService {
-  
-  private url:string = '/assets/JsonData/'; 
-  
-  constructor (private http: HttpClient) {}
 
-  getPasswd(user:string){
-    this.url = this.url+ user +".json";
+  private url:string;  
 
+  constructor(private http: HttpClient){ }
+
+  getPassword(user:string){
+    this.url = '/assets/JsonData/' + user +'.json';
     return this.http.get(this.url);
-            
-     }
-
+  }
 }

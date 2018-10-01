@@ -1,0 +1,7 @@
+{
+    "Car":[
+        {"model":"Ford","value":"Ford"},
+         {"model":"Maruti","value":"Maruti"},
+          {"model":"Swift","value":"Swift"}
+    ]
+}
