@@ -1,0 +1,32 @@
+<input type="number" [(ngModel)]="id" >
+<input type="text" [(ngModel)]="First" >
+<input type="text" [(ngModel)]="Last">
+<input type="submit" (click)='onClick()'>
+<table>
+  <tr>
+    <td><input type="button" (click)="sortById()" value="SortbyID"></td>
+    <td><input type="button" (click)="sortByName()" value="SortbyName"></td>
+  </tr>
+<div *ngFor="let item of employee;let i=index of item">
+<tr>
+<td>{{item.id}}</td>
+<td>{{item.First}}</td> 
+<td>{{item.Last}}</td>
+
+<td><input type="button" (click)="onDelete(i)" value="delete"></td>
+<td><input type="button" (click)="onUpdate(i)" value="update"></td>
+
+</tr>
+</div>
+</table>
+<div [hidden]='hide'>
+<input type="number" [(ngModel)]="id1" >  
+<input type="text" [(ngModel)]="First1" >
+<input type="text" [(ngModel)]="Last1">
+<input type="submit" (click)='onUpdateItem()'>
+</div>
+
+
+
+
+
