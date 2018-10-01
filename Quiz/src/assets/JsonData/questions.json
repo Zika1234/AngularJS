@@ -1,0 +1,14 @@
+{
+    "Questions":[
+        {"ques1":"Ques1:How many legs do cow has","op1":"Four","op2":"Two","op3":"Three","op4":"none"},
+        {"ques1":"Ques2:When did India gained Independence","op1":"1857","op2":"1931","op3":"1947","op4":"1942"},
+        {"ques1":"Ques3:When was first world war started","op1":"1939","op2":"1915","op3":"1919","op4":"1914"},
+        {"ques1":"Ques4:When did UN was formed","op1":"1944","op2":"1945","op3":"1947","op4":"1949"},
+        {"ques1":"Ques5:Who is not the permanent member of UNSC","op1":"Russia","op2":"China","op3":"Germany","op4":"France"},
+        {"ques1":"Ques6:Which is not only an asia country","op1":"Turkemenistan","op2":"Turkey","op3":"UAE","op4":"Isreal"},
+        {"ques1":"Ques7:UK does not include which country","op1":"Englad","op2":"Scotland","op3":"Ireland","op4":"Northern Ireland"},
+        {"ques1":"Ques8:In which year did bloody sunday in Russia took place","op1":"1917","op2":"1919","op3":"1905","op4":"1907"},
+        {"ques1":"Ques9:Countries which doesnt have land boundry with Inda","op1":"Afghanistan","op2":"Srilanka","op3":"Myanmar","op4":"Bhutan"},
+        {"ques1":"Ques10:How many states does Inda have","op1":"27","op2":"28","op3":"29","op4":"25"}
+    ]
+}

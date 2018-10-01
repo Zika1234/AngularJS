@@ -1,0 +1,44 @@
+
+<div class="container">
+  <button type="button" (click)="onBegin()" [hidden]='showButton' >Submit</button>
+
+  <table class="table" [hidden]='showHTML' >
+      <tbody>
+          <tr>
+           
+              <td> {{question}}</td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="ques" value="1" [(ngModel)]="selectedOption" id="1" >{{option1}}</td>
+            <td><input type="radio" name="ques" value="2" [(ngModel)]="selectedOption" id="2">{{option2}}</td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="ques" value="3" [(ngModel)]="selectedOption" id="3">{{option3}}</td>
+            <td><input type="radio" name="ques" value="4" [(ngModel)]="selectedOption" id="4">{{option4}}</td>
+          </tr>
+      </tbody>
+      <tr>
+        <td> <button type="button" (click)="onBack()" >Back</button></td>
+      <td> <button type="button" (click)="onNext()" [hidden]='showNext'>Next</button></td>
+      
+      </tr>
+  </table>
+  <div >
+  <button type="button" (click)="onSubmit()" [hidden]='showHTML' >Submit</button>
+  </div>
+ 
+
+
+
+
+<div [hidden]='showHTML'>
+    <br>
+    <br>
+    <div  >
+      <span *ngFor="let item of array; let i=index of item">
+    <button type="button" class="btn btn-primary" (click)="buttonChange(i)"> Ques{{item+1}} </button>
+      </span>
+  </div>
+</div>
+
+</div>
