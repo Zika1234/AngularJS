@@ -1,0 +1,28 @@
+<!--button for displaying folder-->
+
+<div [hidden]='hideButton'>
+    <button type="button" class="btn btn-success" (click)='onDisplay()' >Click to see Mobile Details</button>
+</div>
+
+<!--Diplaying table-->
+<div [hidden]='hideTable'>
+  <table class="table table-striped table-bordered table-hover table-condensed">
+    <thead>
+    <tr>
+      <td><a href='#' (click)="sortbyId()">Mobile Id</a></td>
+      <td><a href='#' (click)="sortbyName()">Mobile Name</a></td>
+      <td><a href='#' (click)="sortbyPrice()">Mobile Price</a></td>
+      <td>Action</td>        
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor='let item of obj;let i=index of item' >
+      <td>{{item.mobId}}</td>
+      <td>{{item.mobName}}</td>
+      <td>{{item.mobPrice | currency : '$' :true:'1.2-2'}}</td>
+      <td><button type="button" class="btn" (click)='onDelete(i)'>Delete</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
